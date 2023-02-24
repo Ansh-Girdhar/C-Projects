@@ -1,0 +1,51 @@
+Name: Ansh Girdhar 
+
+ID: 152552204 
+
+Email: agirdhar@myseneca.ca 
+
+Section: ZDD 
+
+1. My favorite string function in the string library is strlen. This function is used to count the number of characters in the string. The following small code is an example of strlen() function. 
+
+int lenght = strlen(str); 
+
+        if (lenght >= lowerBound && lenght <= upperBound) { 
+
+            strcpy(c, str); 
+
+            clearStandardInputBuffer(); 
+
+            break; 
+
+        } 
+
+        else { 
+
+          
+
+            if (lowerBound == upperBound) { 
+
+                printf("ERROR: String length must be exactly %d chars: ", upperBound); 
+
+            } 
+
+            else if (lenght > upperBound) { 
+
+                printf("ERROR: String length must be no more than %d chars: ", upperBound); 
+
+            } 
+
+            else { 
+
+                printf("ERROR: String length must be between %d and %d chars: ", lowerBound, upperBound); 
+
+            } 
+
+            clearStandardInputBuffer(); 
+
+        } 
+
+This is my favorite string function because it has a great purpose as we can count the characters in the string. It can be extremely helpful in many parts of the code.  
+
+For instance, if I want to input a specific length of the string, I can use the strlen() function to easily do that along with some iterations.  

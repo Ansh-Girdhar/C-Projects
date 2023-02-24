@@ -1,0 +1,81 @@
+Name: Ansh Girdhar 
+
+ID: 152552204 
+
+Email: agirdhar@myseneca.ca 
+
+Section: ZDD 
+
+1. A lot of time my output does not match with the expected output, and it is frustrating because after thinking a lot of time and putting all the concepts together with so much time. When my code does not show correct output, it is disappointing. However, this is a big challenge, and I must work hard and put all my efforts into the code. The following are the steps that I take to get my desired output. 
+
+-> By selecting ‘start debugging’ option in my visual studio to see where my code is wrong. 
+
+-> I check my code repeatedly for some logics to see where the error is ,and what part needs to be changed..  
+
+->I also read that part in the assignment again to see if my code matches that or if some changes are needed. 
+
+              Therefore, these are the steps that I would take to overcome this challenge. 
+
+ 
+
+2. When I name a module or library, I consider a lot of things. Those are mentioned above: 
+
+-> Firstly, I keep the name short so that it can be easy to remember.  
+
+-> Secondly, the name of the module has every piece of information that I need to identify which code it contains. 
+
+-> Thirdly, I use the same name for naming a module to identify header and source code files 
+
+               For instance, in this assignment, I must use header files and source files. Sometimes, it is best practice to identify a library header and source code files using the same name as I used commonHelpers.c and commonHelpers.h. In which, I defined the function prototypes in the header file and defined those functions in the c file. 
+
+ The reason for giving the same name is that I identify easily which file is which. Because there I made other libraries such as account.h and account.c, which also have the same name, and it is easy to differentiate between c file codes and header file.   
+
+ 
+
+3. Yes, obviously the application of account ticketing system applies a cascading menu system framework. This means the options selected in one menu by the user will help the system to show other options that are related to the previous option.  
+
+              Let us take an example from the assignment; the above output is what the user is watching, and the user is given five options, from which user select according to his needs. 
+
+==============================================  
+
+Account Ticketing System - Agent Menu  
+
+==============================================  
+
+1) Add a new account  
+
+2) Modify an existing account  
+
+3) Remove an account  
+
+4) List accounts: detailed view  
+
+----------------------------------------------  
+
+0) Logout 
+
+Let us suppose that if the user selected the second option, the system would give other options to do that specific task. In this case the output will be the following: 
+
+Enter the account#: 91111  
+
+Update Account: 91111 (Tesla Tommy)  
+
+---------------------------------------- 
+
+1) Update account type (current value: C)  
+
+2) Person  
+
+3) Login  
+
+0) Done 
+
+Now, the user is provided with four options, which update do the user want to make in their account. After that the user will select what they need to do, and there will be other options and so on. 
+
+The example that I have mentioned clearly explains that this application applies a cascading menu system framework. 
+
+ 
+
+ 
+
+    

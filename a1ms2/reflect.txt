@@ -1,0 +1,20 @@
+// #############################################################################################
+//  Assignment: 1 
+//  Milestone : 2
+// #############################################################################################
+//  Name   : Ansh girdhar
+//  ID: 152552202
+//  Email : agirdhar@myseneca.ca
+//  Section : ZDD
+// #############################################################################################
+1. The most challenging function to define for me was getCharOption. In this function, I needed to get only a single character and I was able to do that, but I was not getting an error message if I put more than one character in the input. For example, if I want an input of ‘y’ and ‘n’ and if I write yes and no it was executing according to the first character of word. However, I wanted to get an error if I type yes instead of ‘y’ which I was clearly not getting at first.  
+
+To solve the above problem, I started debugging to see where my code is wrong and made another file where I practiced my desired output to see what I need to do. Moreover, I researched on the internet for help.  
+
+2. The “helper functions” library is a great method to make your code easier to maintain and understand. In this assignment, I used a header file to give names and prototypes of the functions and another c file where I defined those functions. By doing that my main file looked cleaner and another person could easily understand my code. When someone writes a code, and if there are lots of functions, the programmer can get confused easily and it will be hard to manage those many lines of codes.  
+
+3. the C programming language provides a programmer the ability to create new data types (struct) as we can declare number of variables in a structure which can be grouped together. There are many advantages of using structures in our code as it is helpful to manage the number of integers, doubles, and characters we make in the code. We can group together the similar data types in one structure and name it. We can use those data types by just giving the identifier.  
+
+However, the structures are not rainbows or sunshine. It does have some limitations. Firstly, we cannot use operator like /, * etc. on structure variable. Secondly, we cannot write functions in structure. Thirdly, we cannot hide variables in the structure. We can use those variables in any function in the scope of the structure. 
+
+ 
