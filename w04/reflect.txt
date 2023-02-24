@@ -1,0 +1,91 @@
+Ansh Girdhar
+152552204
+agirdhar@myseneca.ca
+ZDD
+1. Absolutely, Parallel arrays provide us the ability to group related data. I have stored related data of any given item in the specific position of an array. 
+
+      	For example: 
+
+	printf("\n   Item cost: $"); 
+
+			scanf("%lf", &amount); 
+
+			if (amount < 100.00) 
+
+				printf("      ERROR: Cost must be at least $100.00"); 
+
+			else 
+
+			{ 
+
+				cost[i] = amount; 
+
+				flag = 1; 
+
+			} 
+
+		printf("   How important is it to you? [1=must have, 2=important, 3=want]: "); 
+
+			scanf("%d", &prio); 
+
+			if (prio > 3 || prio < 1) 
+
+			printf("      ERROR: Value must be between 1 and 3\n"); 
+
+			else 
+
+			{ 
+
+				priority[i] = prio; 
+
+				flag = 1; 
+
+			} 
+
+	In the above example I have stored the cost of items according to the continuous loop. The first element of both cost[i] and prority[I] are the data of the same items. Similarly, the second element of the arrays are the data of another item and so on. The parallel arrays were the key to store data of the different items easily. 
+
+ 
+
+2. It is common practice to iterate arrays initializing the iterator variable to zero and not to a value of one. Because in arrays the first element does not start with 1 it starts with 0. so, if we start the loop with 1 the value will be store in second position not in the first position. The fist position will be left empty or will have some garbage value. 
+
+              For example: 
+
+		for (i = 0; i <= wishlistItem; i++) 
+
+	{ 
+
+		 
+
+		printf("\nItem-%d Details:", i ); 
+
+		do 
+
+		{ 
+
+			printf("\n   Item cost: $"); 
+
+			scanf("%lf", &amount); 
+
+			if (amount < 100.00) 
+
+				printf("      ERROR: Cost must be at least $100.00"); 
+
+			else 
+
+			{ 
+
+				cost[i] = amount; 
+
+				flag = 1; 
+
+			} 
+
+				 
+
+		} while (flag == 0); 
+
+	In the above example I have started the loop with 0 so that the array should store the value from the first position. 
+
+3. If I want to describe the concept of the array to a 5–8-year-old child, I will use an example of train. In a train there are different compartments and train is long. So every compartment is at distinct positions and will not overlap each other ever. Moreover, in that compartment we can store different things with different names, but those things will be in that compartment and will not go outside the compartment. 
+
+ Array is just like train different position such as 0,1,2 in the array are the compartments in the 	train and we can store different things in the compartments like distinct positions in the 	array. 

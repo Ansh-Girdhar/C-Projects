@@ -1,0 +1,14 @@
+In line number 7 of your output:
+The output should be:
+ERROR: You must have a consistent monthly income of at least $500.00
+                                                                     ^
+But your output is: 
+ERROR: You must have a consistent monthly income of at least $500.000000
+                                                                    ^
+
+Unmatched character details:
+The character in column 69 is supposed to be:
+  [Empty Line] ASCII code(0)
+but you printed
+  [0] ASCII code(48)
+

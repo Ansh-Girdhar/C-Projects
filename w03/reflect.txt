@@ -1,0 +1,116 @@
+================================================== 
+
+Workshop #3 (Reflection) 
+
+================================================== 
+
+Name: Ansh Girdhar 
+
+ID: 152552204 
+
+Email: agirdhar@myseneca.ca 
+
+Section: ZDD 
+
+1. Mapping the month integer value to the first three characters of the month name could have been accomplished using if else or switch constructs.  
+
+Example of if/else : 
+
+#define _CRT_SECURE_NO_WARNINGS  
+
+#include <stdio.h>  
+
+  
+
+int main() 
+
+  
+
+{ 
+
+  
+
+    int month = 0; 
+
+    printf("Enter month: "); 
+
+    scanf("%d", &month); 
+
+    if (month == 1) 
+
+        printf("\nJAN"); 
+
+    else if (month == 2) 
+
+       printf("\nFEB"); 
+
+     
+
+    
+
+   return 0; 
+
+  
+
+} 
+
+ 
+
+Example of switch : 
+
+#define _CRT_SECURE_NO_WARNINGS  
+
+  
+
+#include <stdio.h>  
+
+  
+
+int main() 
+
+  
+
+{ 
+
+  
+
+    int month = 0; 
+
+    printf("Enter month: "); 
+
+    scanf("%d", &month); 
+
+    switch (month) 
+
+    { 
+
+    case 1: 
+
+        printf("\nJAN"); 
+
+        break; 
+
+    case 2: 
+
+        printf("\nFEB"); 
+
+        break; 
+
+    default: 
+
+        printf("Invalid month"); 
+
+        break; 
+
+    } 
+
+   return 0; 
+
+  
+
+} 
+ 
+
+2.The three types of iteration constructs are for , while , do-while. I used do-while iteration for validation routines, because in do-while the program will run repeatedly (according to the condition we put there) until the correct input is entered. Furthermore, I used do-while instead of while so that program will show the print statement first and then take the input and will see if it matches the condition or not.  
+
+3.I ran the program at the point where I used any iteration, construct or used a new variable to see if my program is working or not. Moreover, in Visual studio errors are shown at the bottom so if I see any error in that then I debug my code. After debugging, I ran my program many times and input different numbers to check if my program works on those numbers or not. 

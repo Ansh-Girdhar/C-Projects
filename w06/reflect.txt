@@ -1,0 +1,58 @@
+// #############################################################################################
+//  
+// workshop6 part2
+// #############################################################################################
+//  Name   : Ansh girdhar
+//  ID: 152552204
+//  Email : agirdhar@myseneca.ca
+//  Section : ZDD
+// #############################################################################################
+1. Yes, structure data type can demand a lot of memory. For example, "ReportData" structure has nine members, six are of double data type and three are of integer data type. As we know, double data type occupies eight bytes of memory, and integer data type occupies four bytes. If we do some calculations (8*6) + (4*3) we got 60 bytes. Hence, "ReportData" structure occupies sixty bytes of memory in the computer. 
+
+I can pass the information from the structure by giving an identifier to this structure, and using ‘.’ I can call those data types. For instance, 
+
+In this following function, I called the data types of the structure: 
+
+void displayReportData(const struct ReportData display, const int cheap) 
+
+{ 
+
+	printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", display.SKU, display.PRICE, display.lbs_weight, display.kg_weight, display.gram_weight, display.CAL, display.SERVING, display.cost_serv, display.CalCost_serv); 
+
+} 
+
+I used "display" as an identifier. 
+
+Another method that I could use to improve this by passing the information by address. Because that would take less space in the memory of my device. Moreover, I would take less time to compile, and it would be faster as compared to that I used before. In ITC speed also matters. 
+
+2.The CatFoodInfo structure and the ReportData structure contain four members in common. We are just increasing the space by using the same variables in the different structure. We can improve the ReportData structure by nesting the CatFoodInfo structure in that. Here's an example of how it would look  
+
+              struct ReportData 
+
+{ 
+
+	struct CatFoodInfo food[]; 
+
+	int SKU; 
+
+	double PRICE; 
+
+	int CAL; 
+
+	double lbs_weight; 
+
+	double kg_weight; 
+
+	int gram_weight; 
+
+	double SERVING; 
+
+	double cost_serv; 
+
+	double CalCost_serv; 
+
+}; 
+
+The modified print statement would be as follows: 
+
+printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", display[i].food[i].SKU, display[i].food[i].PRICE, display[i].food[i].lbs_weight, display[i].food[i].kg_weight, display[i].food[i].gram_weight, display.[i].food[i].CAL, display[i].food[i].SERVING, display.[i].food[i] cost_serv, display.[i].food[i]CalCost_serv); 

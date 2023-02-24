@@ -1,0 +1,5 @@
+1. I have learned how to print sentences and make some designs in C language. I also understood the use of the header file stdio.h in my program. Moreover, I learnt how to transfer files from my computer to the matrix server. Finally, how to submit my workshop to my professor through Putty.  
+
+2. SSH (Secure shell) is a terminal app to use Unix/Linux server like matrix. I used it to make directories, sub directories. I compiled my code by writing specific commands in Putty. I used Putty to submit my workshop to my professor.  
+
+3. SFTP is a secure method to transfer files. I used WinSCP to transfer both of my parts (Part 1 & Part 2) and reflection of the workshop from my computer to the matrix server. I dragged and dropped my file to a specific directory to do the transfer. 

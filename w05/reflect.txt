@@ -1,0 +1,32 @@
+
+
+									ANSWERS
+Ans1)There is no denying the fact that structures demand more memory as compared to others. In structure "Report Data", there are 9 members out of which 6 are of double type and 3 are of integer type. We know in C language,double occupies 8 bytes and integer occupies 4 bytes of memory. So "Report Data" named structure occupies total memory of 60 bytes. Values in functions can be passed by two ways- passing information or passing information by address. Here we access values by passing information. Here's the demonstration of how I passed values .
+	printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", display.sku, display.price, display.weight_lbs, display.weight_kg, display.weight_gm, display.cal_ser, display.total_serv, display.cost_per_serv, display.cost_cal_per_serv);
+     }
+
+What I could have done is that I can pass information by address of double data type using the(*) sign. 
+   
+Ans2)The CatFoodInfo structure and the ReportData structure contain 4 members in common .But writing the same members again can be prevented as this consumes more space . This can be accomplished by nesting of structures in which we can add the struct Cat Food Info inside the Report data structure. 
+Following is the new and improved "Report Data " structure:
+
+struct ReportData
+{
+    struct CatFoodInfo report[];
+    int sku;
+    double price;
+    int cal_ser;
+    double weight_lbs;
+    double weight_kg;
+    int weight_gm;
+    double total_serv;
+    double cost_per_serv;
+    double cost_cal_per_serv;
+};
+
+The modified printf statement would be like as follows:
+ {
+   printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf", ReportData[i].report[i].sku, ReportData[i].report[i].price, ReportData[i].report[i].weight_lbs, ReportData[i].report[i].weight_kg, ReportData[i].report[i].weight_gm, ReportData[i].report[i].cal_ser, ReportData[i].report[i].total_serv,ReportData[i].report[i].cost_per_serv, ReportData[i].report[i].cost_cal_per_serv);
+ }
+
+

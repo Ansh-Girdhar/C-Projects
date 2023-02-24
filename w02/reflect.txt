@@ -1,0 +1,35 @@
+================================================== 
+
+Workshop #2 (Reflection) 
+
+================================================== 
+
+Name: Ansh Girdhar 
+
+ID: 152552204 
+
+Email: agirdhar@myseneca.ca 
+
+Section: ZDD 
+
+ 
+
+1. 
+
+printf("10.12 = %.15lf\n",10.12); 
+
+It prints 10.119999999999999 rather than the expected value because the number of bits in the significand is limited, the float and double types cannot store all possible floating-point values exactly. That is, the floating-point types store values approximately. 
+
+2.  
+
+A) 0, 1 and -1 
+
+B) -2, -1, 0, 1, 2  
+
+C) -99 to 99 
+
+4. 
+
+ Floating point values sometimes can be approximate values rather than accurate values. Many times, when you are dealing with money calculations, it is best practice to use integer. For example, if you need the numbers of loonies for a certain amount; you cannot say 1.5 loonies are required, it can be either 1 or 2 not in between. Also, sometimes the compiler rounds off the floating-point value which results in an approximate value and not an accurate one. So, for accurate results using an integer value instead of floating-point value is good practice. 
+
+ 

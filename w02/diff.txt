@@ -1,0 +1,14 @@
+In line number 15 of your output:
+The output should be:
+All coins dispensed!
+                   ^
+But your output is: 
+All coins dispensed
+                   ^
+
+Unmatched character details:
+The character in column 20 is supposed to be:
+  [!] ASCII code(33)
+but you printed
+  [Empty Line] ASCII code(0)
+
